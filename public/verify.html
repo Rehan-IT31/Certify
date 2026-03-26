@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CertiFy - Verify</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">🔗 CertiFy</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="issue.html">Issue</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Verify Certificate</h1>
+  <p>Upload a certificate to check authenticity.</p>
+
+  <div class="card">
+    <form id="verifyForm">
+      <input type="file" name="certificate" required />
+      <button type="submit">Verify Certificate</button>
+    </form>
+
+    <p id="result"></p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  min-height: 100vh;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0,0,0,0.3);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #90caf9;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: white;
+}
+
+/* HERO SECTION */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: #cfd8dc;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  padding: 40px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* FORM FIX (IMPORTANT) */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  background: #1c313a;
+  border: none;
+  color: white;
+  border-radius: 8px;
+}
+
+/* BUTTONS */
+button, .main-btn, .secondary-btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+}
+
+button, .main-btn {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover, .main-btn:hover {
+  transform: scale(1.05);
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 1px solid #90caf9;
+  color: #90caf9;
+}
+
+/* BUTTON GROUP */
+.btn-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* RESULT BOX */
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+  text-align: center;
+}

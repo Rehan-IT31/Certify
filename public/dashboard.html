@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ✅ FULL WIDTH CARD */
+    .dashboard-card {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(12px);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    }
+
+    /* ✅ TABLE STYLE */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 14px;
+      text-align: left;
+    }
+
+    th {
+      background: rgba(255,255,255,0.1);
+      color: #90caf9;
+      font-weight: bold;
+    }
+
+    td {
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* ✅ FIX LONG TX IDs */
+    td:nth-child(2) {
+      word-break: break-all;
+      font-size: 13px;
+    }
+
+    /* ✅ SCROLLABLE TABLE */
+    .table-container {
+      max-height: 350px;
+      overflow-y: auto;
+      border-radius: 10px;
+    }
+
+    /* OPTIONAL: scrollbar styling */
+    .table-container::-webkit-scrollbar {
+      width: 6px;
+    }
+    .table-container::-webkit-scrollbar-thumb {
+      background: #90caf9;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🔗 CertiFy</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="issue.html">Issue</a>
+    <a href="verify.html">Verify</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Issued Certificates</h1>
+
+  <div class="dashboard-card">
+
+    <!-- ✅ SCROLLABLE TABLE WRAPPER -->
+    <div class="table-container">
+      <table id="certTable">
+        <thead>
+          <tr>
+            <th style="width:35%">📄 File Name</th>
+            <th style="width:40%">🔗 Transaction ID</th>
+            <th style="width:25%">📅 Issued Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

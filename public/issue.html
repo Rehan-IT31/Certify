@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CertiFy - Issue</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">🔗 CertiFy</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="verify.html">Verify</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Issue Certificate</h1>
+  <p>Securely anchor your certificate on the blockchain.</p>
+
+  <!-- ✅ ADDED NOTE (ONLY CHANGE) -->
+  <p style="color:#ffcc80; font-size:14px; margin-top:-10px;">
+    ⚠️ Only certificates can be issued
+  </p>
+
+  <div class="card">
+    <form id="issueForm">
+      <input type="file" name="certificate" required />
+      <button type="submit">Issue Certificate</button>
+    </form>
+
+    <p id="result"></p>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
